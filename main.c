@@ -2,7 +2,8 @@
 #include "SensorHumedad1.h"
 #include "VRiego1.h"
 
-#define SETPOINT 60
+#define HHSETPOINT 60
+#define HLSETPOINT 20
 
 int main (void)
 {
@@ -13,7 +14,7 @@ int main (void)
 
     Humidity = hGetHumidity();
 
-    if(Humidity < SETPOINT)
+    if( (Humidity < HHSETPOINT) && (Humidity > HLSETPOINT) )
     {
         valveSet(1);
     }else {
