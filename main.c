@@ -21,9 +21,10 @@ int main (void)
 
     if( ( (Humidity < HHSETPOINT) && (Humidity > HLSETPOINT) ) || (Temperature > TSETPOINT) )
     {
+        printf("Turning ON Valve 1");
         valveSet(1);
     }else {
-        //nothing to do
+        printf("Humidity and Temperature is good!");
     }
 
     return 0;
