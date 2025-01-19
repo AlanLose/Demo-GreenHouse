@@ -12,6 +12,7 @@ int tGetTemperature(void)
     int mValue = 40;
     printf("Get Temperature from sensor1 = %d\n", mValue);
     /* Implemantacion para obtener temperatura del sensor 1*/
+    /*Add some fix*/
     return mValue;
 }
 
